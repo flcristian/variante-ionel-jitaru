@@ -18,8 +18,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2022-MI-Varianta-1.h">
+    <ClInclude Include="2022-Varianta-1.h">
       <Filter>Variante\2022 Mate-Info</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bac.txt">
+      <Filter>Variante\2022 Mate-Info</Filter>
+    </Text>
   </ItemGroup>
 </Project>

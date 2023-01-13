@@ -130,7 +130,10 @@
     <ClCompile Include="variante-ionel-jitaru.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2022-MI-Varianta-1.h" />
+    <ClInclude Include="2022-Varianta-1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bac.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
