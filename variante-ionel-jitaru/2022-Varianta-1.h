@@ -4,6 +4,66 @@
 
 using namespace std;
 
+// Subiectul 1
+
+// Problema 3 - MI
+
+void tipar(int m, string s[]) {
+	for (int i = 0; i < m; i++) {
+		cout << s[i] << " ";
+	}
+	cout << endl;
+}
+
+bool valid(int k, string s[]) {
+	bool aparJeleuri = 0, aparPraline = 0;
+	for (int i = 0; i <= k; i++) {
+		if (i != k && s[i] == s[k]) {
+			return 0;
+		}
+		if (s[i] == "jeleuri") {
+			aparJeleuri = 1;
+		}
+		if (s[i] == "praline") {
+			aparPraline = 1;
+		}
+	}
+	if (aparJeleuri == 1 && aparPraline == 1) {
+		return 0;
+	}
+	return 1;
+}
+
+bool solutie(int m, int k) {
+	if (k == m - 1) {
+		return 1;
+	}
+	return 0;
+}
+
+void back(int n, int m, string x[], string s[], int k) {
+	for (int i = 0; i < n; i++) {
+		s[k] = x[i];
+		if (valid(k, s)) {
+			if (solutie(m, k)) {
+				tipar(m, s);
+			}
+			else {
+				back(n, m, x, s, k + 1);
+			}
+		}
+	}
+}
+
+void rezolvareSub1Problema3() {
+	int n = 4;
+	string x[4] = { "bomboane","drajeuri","jeleuri","praline" };
+	string s[100];
+	for (int m = 2; m < 4; m++) {
+		back(n, m, x, s, 0);
+	}
+}
+
 // Subiectul 2
 
 // Problema 3 - SN

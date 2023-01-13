@@ -8,8 +8,11 @@
     <Filter Include="Variante">
       <UniqueIdentifier>{20c4f49a-b4be-47fe-b054-f50dad62b1a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Variante\2022 Mate-Info">
+    <Filter Include="Variante\2022">
       <UniqueIdentifier>{9a8a9201-80bb-46a9-92c4-a0986b1e6b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Variante\2021">
+      <UniqueIdentifier>{9dc2d04e-263f-4a2c-a27b-88dd39fa4745}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,12 +22,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2022-Varianta-1.h">
-      <Filter>Variante\2022 Mate-Info</Filter>
+      <Filter>Variante\2022</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-2.h">
+      <Filter>Variante\2021</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
-      <Filter>Variante\2022 Mate-Info</Filter>
+      <Filter>Variante\2022</Filter>
     </Text>
   </ItemGroup>
 </Project>

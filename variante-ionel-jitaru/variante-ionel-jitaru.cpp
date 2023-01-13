@@ -2,5 +2,5 @@
 
 int main()
 {
-	avion();
+	rezolvareSub1Problema3();
 }
