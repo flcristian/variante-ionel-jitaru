@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Variante">
+      <UniqueIdentifier>{20c4f49a-b4be-47fe-b054-f50dad62b1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Variante\2022 Mate-Info">
+      <UniqueIdentifier>{9a8a9201-80bb-46a9-92c4-a0986b1e6b2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="variante-ionel-jitaru.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2022-MI-Varianta-1.h">
+      <Filter>Variante\2022 Mate-Info</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
