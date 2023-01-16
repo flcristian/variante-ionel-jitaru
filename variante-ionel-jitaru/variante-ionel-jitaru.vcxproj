@@ -132,10 +132,13 @@
   <ItemGroup>
     <ClInclude Include="2021-Varianta-2.h" />
     <ClInclude Include="2021-Varianta-3.h" />
+    <ClInclude Include="2021-Varianta-4.h" />
     <ClInclude Include="2022-Varianta-1.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt" />
+    <Text Include="bac1.txt" />
+    <Text Include="bac2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
