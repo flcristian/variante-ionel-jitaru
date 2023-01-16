@@ -1,6 +1,6 @@
-#include "2022-Varianta-1.h"
+#include "2021-Varianta-3.h"
 
 int main()
 {
-	rezolvareSub1Problema3();
+	rezolvareSub3Problema3();
 }
