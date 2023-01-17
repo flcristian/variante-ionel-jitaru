@@ -133,6 +133,10 @@
     <ClInclude Include="2021-Varianta-2.h" />
     <ClInclude Include="2021-Varianta-3.h" />
     <ClInclude Include="2021-Varianta-4.h" />
+    <ClInclude Include="2021-Varianta-5.h" />
+    <ClInclude Include="2021-Varianta-6.h" />
+    <ClInclude Include="2021-Varianta-7.h" />
+    <ClInclude Include="2021-Varianta-8.h" />
     <ClInclude Include="2022-Varianta-1.h" />
   </ItemGroup>
   <ItemGroup>
