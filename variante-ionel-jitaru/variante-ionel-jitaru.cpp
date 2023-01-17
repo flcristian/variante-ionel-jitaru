@@ -1,4 +1,4 @@
-#include "2021-Varianta-8.h"
+#include "2021-Varianta-9.h"
 
 int main()
 {
