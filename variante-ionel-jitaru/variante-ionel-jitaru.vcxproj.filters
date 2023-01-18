@@ -14,6 +14,9 @@
     <Filter Include="Variante\2021">
       <UniqueIdentifier>{9dc2d04e-263f-4a2c-a27b-88dd39fa4745}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Text Files">
+      <UniqueIdentifier>{a65fa9e0-1515-4ff0-90f2-57cbafa24e96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="variante-ionel-jitaru.cpp">
@@ -27,10 +30,46 @@
     <ClInclude Include="2021-Varianta-2.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
+    <ClInclude Include="2021-Varianta-3.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-4.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-5.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-6.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-7.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-8.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-9.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-10.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-11.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-12.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
-      <Filter>Variante\2022</Filter>
+      <Filter>Text Files</Filter>
+    </Text>
+    <Text Include="bac1.txt">
+      <Filter>Text Files</Filter>
+    </Text>
+    <Text Include="bac2.txt">
+      <Filter>Text Files</Filter>
     </Text>
   </ItemGroup>
 </Project>
