@@ -57,6 +57,9 @@
     <ClInclude Include="2021-Varianta-11.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
+    <ClInclude Include="2021-Varianta-12.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
