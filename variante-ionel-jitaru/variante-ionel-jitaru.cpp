@@ -6,5 +6,5 @@
 
 int main()
 {
-	rezolvareSub3Problema3();
+	rezolvareSub3Problema1();
 }
