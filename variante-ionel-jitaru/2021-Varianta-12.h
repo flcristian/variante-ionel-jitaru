@@ -54,10 +54,6 @@ void rezolvareSub1Problema3(){
 
 // Problema 1
 
-// ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? 
-
 int countCifre(int x){
     int c = 0;
     while(x!=0){
@@ -77,20 +73,16 @@ int formareNumar(int z[], int n){
 
 void frate(int x, int& y){
     int z[100], n = countCifre(x);
-    for(int i = n - 1;i>-1;i--){
-        z[i] = x%10+1;
-        x/=10;
+    for (int i = n-1; i >-1; i--) {
+        z[i] = x % 10 + 1;
+        z[i] = z[i] % 10;
+        x /= 10;
     }
-    for(int i = n - 1;i>-1;i--){
-        if(z[i]==10){
-            z[i]=0;
-            z[i-1]++;
-        }
-    }
-    if(z[0]==0){
+    if (z[0] == 0) {
         y = -1;
-    }else{
-        y = formareNumar(z,n);
+    }
+    else {
+        y = formareNumar(z, n);
     }
 }
 
@@ -102,10 +94,6 @@ void rezolvareSub3Problema1(){
     frate(x,y);
     cout << y;
 }
-
-// ? ? ? ? ? ? ? ?
-// ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? 
 
 // Problema 2
 

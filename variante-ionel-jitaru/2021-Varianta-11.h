@@ -8,10 +8,6 @@ using namespace std;
 
 // Problema 2
 
-// ? ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? ? 
-
 void tipar(int s[]){
     bool apareNenul = false;
     for(int i = 0;i<4;i++){
@@ -48,15 +44,11 @@ void back(int k, int x[], int s[]){
     }
 }
 
-void rezolvareSub1Problema2(){
-    int x[3] = {0,1,2};
+void rezolvareSub1Problema2() {
+    int x[3] = { 0,1,2 };
     int s[100];
-    back(0,x,s);
+    back(0, x, s);
 }
-
-// ? ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? ? 
-// ? ? ? ? ? ? ? ? ? 
 
 // Subiectul 3
 
@@ -154,12 +146,18 @@ void rezolvareSub3Problema2(){
 
 // Problema 3
 
-void atribuire(int v[], int& n, int y){
-    v[0] = 1;
-    n = 1;
-    while(v[n-1]<y && v[n-1]+2*n<=y){
-        v[n]=v[n-1]+2*n;
+int afisare(int v[], int& n, int y) {
+    int curent = v[n - 1] + 2 * n;
+    int r = n;
+    if (v[n - 1] <= y && curent <= y) {
+        v[n] = v[n - 1] + 2 * n;
         n++;
+        int nr = afisare(v, n, y);
+        cout << nr << " ";
+        return nr - 2*r;
+    }
+    else {  
+        return v[n - 1];
     }
 }
 
@@ -173,11 +171,9 @@ void rezolvareSub3Problema3(){
     // Nu inteleg la ce trebuie x in problema asta.
 
     int v[100], n;
-    atribuire(v,n,y);
-
-    for(int i = n - 1;i>-1;i--){
-        cout << v[i] << " ";
-    }
+    v[0] = 1, n = 1;
+    afisare(v, n, y);
+    cout << v[0];
 }
 
 
