@@ -17,6 +17,9 @@
     <Filter Include="Text Files">
       <UniqueIdentifier>{a65fa9e0-1515-4ff0-90f2-57cbafa24e96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Variante\2020">
+      <UniqueIdentifier>{d7605833-a2f1-4262-89f9-fea73e289257}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="variante-ionel-jitaru.cpp">
@@ -59,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="2021-Varianta-12.h">
       <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-1.h">
+      <Filter>Variante\2020</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
