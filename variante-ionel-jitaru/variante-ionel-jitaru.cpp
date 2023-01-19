@@ -1,10 +1,6 @@
-#include "2021-Varianta-12.h"
-
-// Intrebari la Varianta 11
-// Intrebari la Varianta 12
-
+#include "2020-Varianta-1.h"
 
 int main()
 {
-	rezolvareSub3Problema1();
+	rezolvareSub3Problema2();
 }
