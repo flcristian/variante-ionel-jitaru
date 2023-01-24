@@ -66,6 +66,12 @@
     <ClInclude Include="2020-Varianta-1.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2020-Varianta-2.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-3.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">

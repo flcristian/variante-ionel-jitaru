@@ -135,12 +135,26 @@ void rezolvareSub3Problema2() {
 
 // Problema 3
 
-int afisare(int y, int v[], int& n) {
-	
+void afisare(int y, int v[], int& n) {
+	v[0] = 1, v[1] = 1;
+	n = 1;
+	while (v[n]<y && v[n]*3-v[n-1]<=y) {
+		v[n + 1] = v[n] * 3 - v[n - 1];
+		n++;
+	}
 }
 
 void rezolvareSub3Problema3() {
-
+	int x, y;
+	int v[100], n;
+	cout << "Introduceti x : ";
+	cin >> x;
+	cout << "Introduceti y : ";
+	cin >> y;
+	afisare(y, v, n);
+	for (int i = n; i > -1; i--) {
+		cout << v[i] << " ";
+	}
 }
 
 
