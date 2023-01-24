@@ -131,6 +131,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2020-Varianta-1.h" />
+    <ClInclude Include="2020-Varianta-2.h" />
+    <ClInclude Include="2020-Varianta-3.h" />
     <ClInclude Include="2021-Varianta-12.h" />
     <ClInclude Include="2021-Varianta-11.h" />
     <ClInclude Include="2021-Varianta-10.h" />
