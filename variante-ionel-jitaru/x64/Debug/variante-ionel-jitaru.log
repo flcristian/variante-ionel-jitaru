@@ -1,2 +1,4 @@
 ﻿  variante-ionel-jitaru.cpp
+D:\mycode\variante-ionel-jitaru\variante-ionel-jitaru\2020-Varianta-3.h(82,7): warning C4101: 'fig': unreferenced local variable
+D:\mycode\variante-ionel-jitaru\variante-ionel-jitaru\2020-Varianta-3.h(146,6): warning C4101: 'x': unreferenced local variable
   variante-ionel-jitaru.vcxproj -> D:\mycode\variante-ionel-jitaru\x64\Debug\variante-ionel-jitaru.exe

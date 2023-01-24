@@ -86,3 +86,111 @@ void rezolvareSub2Problema2() {
 
 // Problema 1
 
+int countDiv(int x) {
+	int c = 0;
+	for (int i = 1; i <= x; i++) {
+		if (x % i == 0) {
+			c++;
+		}
+	}
+	return c;
+}
+
+bool estePrim(int x) {
+	if (countDiv(x) == 2) {
+		return 1;
+	}
+	return 0;
+}
+
+int factori(int n, int m) {
+	int c = 0;
+	int flag = 0;
+	int i = 2;
+	while (i <= n && i <= m) {
+		if (estePrim(i)) {
+			if (n % i == 0 && m % i == 0) {
+				c += (flag + 1) % 2;
+				flag = 1;
+				n /= i, m /= i;
+			}
+			else {
+				flag = 0;
+				i++;
+			}
+		}
+		else {
+			flag = 0;
+			i++;
+		}
+	}
+	return c;
+}
+
+void rezolvareSub3Problema1() {
+	int n, m;
+	cout << "Introduceti n : ";
+	cin >> n;
+	cout << "Introduceti m : ";
+	cin >> m;
+
+	cout << factori(n, m);
+}
+
+// Problema 2
+
+void rezolvareSub3Problema2() {
+	int n;
+	cout << "Introduceti n : ";
+	cin >> n;
+	int x[100][100];
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			int c = 1;
+			if ((i + j + 1) / n > 0) {
+				c *= -1;
+			}
+			cout << (n - (i + j + 1))*c << " ";
+		}
+		cout << endl;
+	}
+}
+
+// Problema 3
+
+void citireLast(int x[], int& n) {
+	ifstream f("bac.txt");
+	n = 0;
+	while (!f.eof()) {
+		f >> x[n];
+		n++;
+	}
+	f.close();
+}
+
+int secventa(int x[], int n) {
+	int i = 0, j = n - 1;
+	int fi = -1, fj = -1;
+	while (fi == -1 || fj == -1) {
+		if (x[i] < 0 && fi == -1) {
+			fi = i;
+		}
+		if (x[j] < 0 && fj == -1) {
+			fj = j;
+		}
+		i++, j--;
+	}
+	int ni = n - fi;
+	int nj = fj + 1;
+	int max = ni;
+	if (nj > max) {
+		max = nj;
+	}
+	return max;
+}
+
+void rezolvareSub3Problema3() {
+	int x[100], n;
+	citireLast(x, n);
+	cout << secventa(x, n);
+}
