@@ -72,6 +72,33 @@
     <ClInclude Include="2020-Varianta-3.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2020-Varianta-5.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-4.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-6.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-7.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-8.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-9.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-10.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-11.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-12.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
@@ -81,6 +108,9 @@
       <Filter>Text Files</Filter>
     </Text>
     <Text Include="bac2.txt">
+      <Filter>Text Files</Filter>
+    </Text>
+    <Text Include="bac-out.txt">
       <Filter>Text Files</Filter>
     </Text>
   </ItemGroup>

@@ -131,8 +131,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2020-Varianta-1.h" />
+    <ClInclude Include="2020-Varianta-10.h" />
+    <ClInclude Include="2020-Varianta-11.h" />
+    <ClInclude Include="2020-Varianta-12.h" />
     <ClInclude Include="2020-Varianta-2.h" />
     <ClInclude Include="2020-Varianta-3.h" />
+    <ClInclude Include="2020-Varianta-4.h" />
+    <ClInclude Include="2020-Varianta-6.h" />
+    <ClInclude Include="2020-Varianta-5.h" />
+    <ClInclude Include="2020-Varianta-7.h" />
+    <ClInclude Include="2020-Varianta-8.h" />
+    <ClInclude Include="2020-Varianta-9.h" />
     <ClInclude Include="2021-Varianta-12.h" />
     <ClInclude Include="2021-Varianta-11.h" />
     <ClInclude Include="2021-Varianta-10.h" />
@@ -147,6 +156,7 @@
     <ClInclude Include="2022-Varianta-1.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="bac-out.txt" />
     <Text Include="bac.txt" />
     <Text Include="bac1.txt" />
     <Text Include="bac2.txt" />

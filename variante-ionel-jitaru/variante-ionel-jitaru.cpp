@@ -1,4 +1,4 @@
-#include "2020-Varianta-3.h"
+#include "2020-Varianta-12.h"
 
 int main() {
 	rezolvareSub3Problema3();
