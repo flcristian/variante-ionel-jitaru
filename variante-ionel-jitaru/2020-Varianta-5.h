@@ -21,22 +21,22 @@ bool valid(int k, string s[]) {
 		if (s[i] == s[k] && i != k) {
 			return 0;
 		}
-		if (s[i] == "sacou") {
+		if (s[i]== "sacou") {
 			apareSacou = 1;
 		}
 		if (s[i] == "cravata") {
-			if (apareSacou) {
+			if (apareSacou == 1) {
 				return 0;
 			}
 			apareCravata = 1;
 		}
-		if (s[i] == "camasa" && (apareCravata || apareSacou)) {
+		if (s[i] == "camasa" && (apareCravata == 1 || apareSacou == 1)) {
 			return 0;
 		}
 		if (s[i] == "pantofi") {
 			aparePantofi = 1;
 		}
-		if ((s[i] == "pantaloni" || s[i] == "sosete") && aparePantofi) {
+		if ((s[i] == "pantaloni" || s[i] == "sosete") && aparePantofi == 1) {
 			return 0;
 		}
 	}
@@ -58,7 +58,7 @@ void back(string x[], string s[], int k) {
 				tipar(s);
 			}
 			else {
-				back(x, s, k);
+				back(x, s, k + 1);
 			}
 		}
 	}
@@ -70,8 +70,6 @@ void rezolvareSub1Problema3() {
 
 	back(x, s, 0);
 }
-
-// ? ?? ? ?? ? ? 
 
 // Subiectul 2
 

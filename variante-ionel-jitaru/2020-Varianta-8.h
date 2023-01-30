@@ -166,8 +166,3 @@ void rezolvareSub3Problema2() {
 		cout << endl;
 	}
 }
-
-
-// Problema 3
-
-// ? ? ?

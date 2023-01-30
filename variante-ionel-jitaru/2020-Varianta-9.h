@@ -105,7 +105,7 @@ void kSecvente(int x[], int n, int k) {
 						max = c;
 					}
 				}
-				if (j == n - 1) {
+				if (j == n) {
 					if (c == max) {
 						count++;
 					}
@@ -126,5 +126,3 @@ void rezolvareSub3Problema3() {
 	citireLast(x, n, k);
 	kSecvente(x, n, k);
 }
-
-// ?? ? ? ? ? ? ? ?  ?

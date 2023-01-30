@@ -52,25 +52,20 @@ void rezolvareSub3Problema1() {
 
 // Problema 3
 
-int next(int x, int n) {
-	if (n > 10) {
-		if (x % 2 == 1) {
-			return x * 2;
+void rezolvare(int y[100], int& n, int x) {
+	n = 0;
+	while (y[n - 1] < x) {
+		if (n < 10) {
+			y[n] = n + 1;
 		}
 		else {
-			return x + 1;
+			if (n % 2 == 0) {
+				y[n] = y[n - 1] * 2;
+			}
+			else {
+				y[n] = y[n - 1] + 1;
+			}
 		}
-	}
-	else {
-		return n + 1;
-	}
-}
-
-void rezolvare(int y[100], int& n, int x) {
-	y[0] = 1;
-	n = 1;
-	while (y[n - 1] <= x && next(y[n - 1], n) <= x) {
-		y[n] = next(y[n - 1], n);
 		n++;
 	}
 }
@@ -86,5 +81,3 @@ void rezolvareSub3Problema3() {
 		cout << y[i] << " ";
 	}
 }
-
-// ? ? ? ?
