@@ -134,6 +134,8 @@
     <ClInclude Include="2020-Varianta-10.h" />
     <ClInclude Include="2020-Varianta-11.h" />
     <ClInclude Include="2020-Varianta-12.h" />
+    <ClInclude Include="2020-Varianta-13.h" />
+    <ClInclude Include="2020-Varianta-14.h" />
     <ClInclude Include="2020-Varianta-2.h" />
     <ClInclude Include="2020-Varianta-3.h" />
     <ClInclude Include="2020-Varianta-4.h" />
