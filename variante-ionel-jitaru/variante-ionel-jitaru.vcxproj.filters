@@ -99,6 +99,12 @@
     <ClInclude Include="2020-Varianta-12.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2020-Varianta-13.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-14.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
