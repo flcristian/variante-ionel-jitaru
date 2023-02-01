@@ -33,7 +33,7 @@ bool apare(string y[], string x) {
 
 bool valid(int k, string s[], string y[]) {
 	for (int i = 0; i < k; i++) {
-		if (apare(y, s[i]) == 1 && apare(y, s[i + 1])) {
+		if (apare(y, s[i]) && apare(y, s[i + 1])) {
 			return 0;
 		}
 	}
