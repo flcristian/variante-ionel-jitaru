@@ -55,4 +55,76 @@ void rezolvareSub1Problema3() {
 	int s[100];
 
 	back(x, s, p, 0);
+}\
+
+// Subiectul 3
+
+// Problema 1
+
+bool estePar(int x) {
+	if (x % 2 == 0) {
+		return 1;
+	}
+	return 0;
+}
+
+void perechi(int n) {
+	for (int i = 1; i <= n / 2; i++) {
+		for (int j = 1; j <= n; j++) {
+			if (i * j == n && estePar(i) != estePar(j) && j > i) {
+				cout << "[" << i << " " << j << "] ";
+			}
+		}
+	}
+}
+
+void rezolvareSub3Problema1() {
+	int n;
+	cout << "Introduceti n : ";
+	cin >> n;
+
+	perechi(n);
+}
+
+// Problema 3
+
+void citireLast(int x[], int& n) {
+	ifstream f("bac.txt");
+	n = 0;
+	while (!f.eof()) {
+		f >> x[n];
+		n++;
+	}
+	f.close();
+}
+
+void bubbleSort(int x[], int n) {
+	bool flag = true;
+	do {
+		flag = true;
+		for (int i = 0; i < n - 1; i++) {
+			if (x[i] > x[i + 1]) {
+				int r = x[i];
+				x[i] = x[i + 1];
+				x[i + 1] = r;
+				flag = false;
+			}
+		}
+	} while (flag == false);
+}
+
+void afisare(int x[], int n) {
+	for (int i = 0, c = 0; i < n && c < 3; i++) {
+		if (x[i] % 100 == 20) {
+			cout << x[i] << " ";
+			c++;
+		}
+	}
+}
+
+void rezolvareSub3Problema3() {
+	int x[100], n;
+	citireLast(x, n);
+	bubbleSort(x, n);
+	afisare(x, n);
 }

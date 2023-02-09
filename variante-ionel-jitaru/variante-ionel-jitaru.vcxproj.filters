@@ -105,6 +105,24 @@
     <ClInclude Include="2020-Varianta-14.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2020-Varianta-15.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-16.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-17.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-18.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-19.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-20.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
@@ -114,9 +132,6 @@
       <Filter>Text Files</Filter>
     </Text>
     <Text Include="bac2.txt">
-      <Filter>Text Files</Filter>
-    </Text>
-    <Text Include="bac-out.txt">
       <Filter>Text Files</Filter>
     </Text>
   </ItemGroup>
