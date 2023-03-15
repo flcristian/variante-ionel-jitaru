@@ -78,6 +78,29 @@ void rezolvareSub3Problema1() {
 	cout << s;
 }
 
+// Problema 2
+
+void citirePb2(char cuvinte[200][200], int& n, int& k) {
+	char text[10000] = "", nr[10] = "", kr[10] = "";
+	cout << "Introduceti numarul de cuvinte : ";
+	cin >> nr;
+	cin.getline(nr, 100);
+	cout << "Introduceti pozitia cuvantului dorit : ";
+	cin.getline(kr, 100);
+	k = atoi(kr);
+	for (int i = 0; i < n; i++) {
+		cout << "Introduceti cuvantul " << i << " : ";
+		cin.getline(cuvinte[i], 200);
+	}
+}
+
+void rezolvareSub3Problema2() {
+	char cuvinte[200][200];
+	int n, k;
+	citirePb2(cuvinte, n, k);
+	// ? ? ?
+}
+
 // Problema 3
 
 void citire(int x[], int& n) {

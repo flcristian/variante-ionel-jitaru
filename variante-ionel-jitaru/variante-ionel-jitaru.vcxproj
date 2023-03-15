@@ -167,6 +167,7 @@
     <Text Include="bac.txt" />
     <Text Include="bac1.txt" />
     <Text Include="bac2.txt" />
+    <Text Include="intrebari.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
