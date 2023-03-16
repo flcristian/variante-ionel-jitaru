@@ -146,6 +146,59 @@ void rezolvareSub3Problema1() {
 	cout << mozaic(x, y, z);
 }
 
+// Problema 2 MI
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+int countCifre(int x) {
+	int count = 0;
+	while (x > 0) {
+		count++;
+		x /= 10;
+	}
+	return count;
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	
+	int count = -1;
+	bool este = true;
+	for (int i = 0; i < d; i++) {
+		int k = atoi(cuvinte[i]);
+		if (!(k == 0 && cuvinte[i][0] != '0')) {
+			if (count == -1) {
+				count = countCifre(k);
+			}
+			else if (count != countCifre(k)) {
+				este = false;
+			}
+		}
+	}
+
+	if (este) {
+		cout << count;
+	}
+	else {
+		cout << "NU";
+	}
+}
+
 // Problema 2 SN
 
 void citireSub3Pb2(int x[], int& n) {
@@ -155,15 +208,6 @@ void citireSub3Pb2(int x[], int& n) {
 		cout << "Introduceti x[" << i << "] : ";
 		cin >> x[i];
 	}
-}
-
-int countCifre(int x) {
-	int c = 0;
-	while (x != 0) {
-		c++;
-		x /= 10;
-	}
-	return c;
 }
 
 int auToateNrKCifre(int x[], int n) {

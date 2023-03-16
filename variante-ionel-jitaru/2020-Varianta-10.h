@@ -1,4 +1,4 @@
-#include <iostream>
+	#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -107,6 +107,38 @@ void rezolvareSub3Problema1() {
 	cout << p;
 }
 
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	for (int i = 0; i < d; i++) {
+		int j = strlen(cuvinte[i]) - 1, k = strlen(cuvinte[i + 1]) - 1;
+		if (cuvinte[i][j] == cuvinte[i + 1][k]) {
+			cout << cuvinte[i] << " succes ";
+		}
+		else {
+			cout << cuvinte[i] << " ";
+		}
+	}
+}
+
 // Problema 3
 
 void citireLast(int x[], int& n) {
@@ -128,7 +160,7 @@ int maxRatie(int x[], int n) {
 		for (int j = i; j < n; j++) {
 			if (x[j] - x[j - 1] != r) {
 				j = n;
-				if (c > max) {f
+				if (c > max) {
 					max = c;
 					maxR = r;
 				}

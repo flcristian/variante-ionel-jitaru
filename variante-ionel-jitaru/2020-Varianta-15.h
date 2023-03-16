@@ -121,6 +121,62 @@ void rezolvareSub3Problema1() {
 	cout << p;
 }
  
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+bool esteVocala(char litera) {
+	char vocale[5] = { 'a','e','i','o','u' };
+	for (int i = 0; i < 5; i++) {
+		if (litera == vocale[i]) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+bool areNumarDeConsoaneSiVocaleEgal(char cuvant[100]) {
+	int consoane = 0, vocale = 0;
+	for (int i = 0; i < strlen(cuvant); i++) {
+		if (esteVocala(cuvant[i])) {
+			vocale++;
+		}
+		else {
+			consoane++;
+		}
+	}
+	if (consoane == vocale) {
+		return 1;
+	}
+	return 0;
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	int count = 0;
+	for (int i = 0; i < d; i++) {
+		if (areNumarDeConsoaneSiVocaleEgal(cuvinte[i])) {
+			count++;
+		}
+	}
+	cout << count << endl;
+}
+
 // Problema 3
 
 void factori(int x[], int& n, int p) {

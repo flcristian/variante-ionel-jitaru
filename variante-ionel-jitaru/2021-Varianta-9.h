@@ -95,6 +95,70 @@ void rezolvareSub3Problema1(){
     cout<<nr<<endl;
 }
 
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+    d = 0;
+    char* a;
+    a = strtok(text, " ");
+    while (a != NULL) {
+        strcpy(cuvinte[d], a);
+        d++;
+        a = strtok(NULL, " ");
+    }
+}
+
+bool esteVocala(char litera) {
+    char vocale[5] = { 'a','e','i','o','u' };
+    for (int i = 0; i < 5; i++) {
+        if (litera == vocale[i]) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+void frecventaVocale(char cuvant[100], int frecventa[5]) {
+    char vocale[5] = { 'a','e','i','o','u' };
+    for (int i = 0; i < strlen(cuvant); i++) {
+        for (int j = 0; j < 5; j++) {
+            if (cuvant[i] == vocale[j]) {
+                frecventa[j]++;
+            }
+        }
+    }
+}
+
+bool doarOVocala(int frecventa[5]) {
+    int count = 0;
+    for (int i = 0; i < 5; i++) {
+        if (frecventa[i] > 0) {
+            count++;
+        }
+    }
+    if (count == 1) {
+        return 1;
+    }
+    return 0;
+}
+
+void rezolvareSub3Problema2() {
+    char text[100] = "";
+    char cuvinte[100][100];
+    int d;
+    cout << "Introduceti textul : ";
+    cin.getline(text, 100);
+    spargere(text, cuvinte, d);
+
+    for (int i = 0; i < d; i++) {
+        int frecventa[5]{};
+        frecventaVocale(cuvinte[i], frecventa);
+        if (doarOVocala(frecventa)) {
+            cout << cuvinte[i] << " ";
+        }
+    }
+}
+
 // Problema 3
 
 void citireLast(int x[], int& n){

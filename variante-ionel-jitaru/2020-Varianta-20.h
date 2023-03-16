@@ -9,12 +9,6 @@ using namespace std;
 
 // Problema 3
 
-// ciuperci < legume
-// legume < salata
-// tortul + pere < panna cotta
-
-//todo:functie ce primeste ca parametru un vector de cuvinte  ,dimensiunea si cuv1,cuv2  returnam fals daca cuv1 > inaintea cuv2 
-
 bool comparator(char x[6][200], int k, char cuvant1[200], char cuvant2[200]) {
 	bool apare = 0;
 	for (int i = 0; i < k; i++) {
@@ -123,8 +117,35 @@ void rezolvareSub2Problema3() {
 
 // Problema 2
 
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
 void rezolvareSub3Problema2() {
 	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	for (int i = 0; i < d; i++) {
+		int k = atoi(cuvinte[i]);
+		if (k == 0 && cuvinte[i][0] != '0') {
+			cout << cuvinte[i];
+		}
+		else {
+			cout << k;
+		}
+		cout << " ";
+	}
 }
 
 // Problema 3

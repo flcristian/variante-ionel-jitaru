@@ -62,6 +62,52 @@ void rezolvareSub3Problema1() {
 	fii(n);
 }
 
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+void virgulaToPunct(char* numar) {
+	for (int i = 0; i < strlen(numar); i++) {
+		if (numar[i] == ',') {
+			numar[i] = '.';
+		}
+	}
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	for (int i = 0; i < d; i++) {
+		char r[200] = "";
+		strcpy(r, cuvinte[i]);
+		virgulaToPunct(r);
+		double k = atof(r);
+		if (k < 0) {
+			cout << " ";
+		}
+		else {
+			cout << cuvinte[i];
+		}
+		cout << " ";
+	}
+}
+
+
+
 // Problema 3
 
 void citire(int x[], int& n) {

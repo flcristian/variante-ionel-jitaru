@@ -97,8 +97,6 @@ void rezolvareSub1Problema3() {
 	back(x, y, z, s, 0);
 }
 
-// ? ? ? ? ? ? ? ?
-
 // Subiectul 3
 
 // Problema 1

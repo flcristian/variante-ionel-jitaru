@@ -50,6 +50,69 @@ void rezolvareSub3Problema1() {
 	cout << pDoi(n);
 }
 
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+bool esteVocala(char litera) {
+	char vocale[5] = { 'a','e','i','o','u' };
+	for (int i = 0; i < 5; i++) {
+		if (litera == vocale[i]) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+void cautareSiEliminareVocala(char cuvant[100], bool& found) {
+	for (int i = strlen(cuvant) - 1; i > 0 && !found; i--) {
+		if (esteVocala(cuvant[i])) {
+			char seg1[100] = "";
+			char seg2[100] = "";
+			strncpy(seg1, cuvant, i);
+			strcpy(seg2, cuvant + i + 1);
+			strcpy(cuvant, seg1);
+			strcat(cuvant, seg2);
+			found = true;
+		}
+	}
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	bool found = false;
+	if (!found) {
+		for (int i = d - 1; i > 0; i--) {
+			cautareSiEliminareVocala(cuvinte[i], found);
+		}
+	}
+	
+	if (found) {
+		for (int i = 0; i < d; i++) {
+			cout << cuvinte[i] << " ";
+		}
+	}
+	else {
+		cout << "nu exista";
+	}
+	cout << endl;
+}
+
 // Problema 3
 
 void rezolvare(int y[100], int& n, int x) {

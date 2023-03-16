@@ -80,6 +80,8 @@ void rezolvareSub2Problema3() {
 
 // Subiectul 3
 
+// Problema 1
+
 bool estePatrat(int x) {
 	double r = sqrt(x);
 	if (r == (int)sqrt(x)) {
@@ -110,6 +112,36 @@ void rezolvareSub3Problema1() {
 	}
 	else {
 		cout << s;
+	}
+}
+
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	for (int i = 0; i < d; i++) {
+		char cuvant[100] = "";
+		strcpy(cuvant, cuvinte[i]);
+		_strlwr(cuvant);
+		cuvant[0] = cuvant[0] - 32;
+		cout << cuvant << " ";
 	}
 }
 

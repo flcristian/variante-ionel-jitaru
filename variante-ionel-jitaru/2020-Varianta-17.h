@@ -114,6 +114,65 @@ void rezolvareSub3Problema1() {
 	cout << maxim(n);
 }
 
+// Problema 2
+
+void spargere(char text[], char cuvinte[100][100], int& d) {
+	d = 0;
+	char* a;
+	a = strtok(text, " ");
+	while (a != NULL) {
+		strcpy(cuvinte[d], a);
+		d++;
+		a = strtok(NULL, " ");
+	}
+}
+
+bool esteVocala(char litera) {
+	char vocale[5] = { 'a','e','i','o','u' };
+	for (int i = 0; i < 5; i++) {
+		if (litera == vocale[i]) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+bool onlyVocale(char cuvant[200]) {
+	for (int i = 0; i < strlen(cuvant); i++) {
+		if (!esteVocala(cuvant[i])) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+void dublareCuvantPozitie(char cuvinte[100][100], int& d, int k) {
+	for (int i = d; i > k; i--) {
+		strcpy(cuvinte[i], cuvinte[i - 1]);
+	}
+	d++;
+}
+
+void rezolvareSub3Problema2() {
+	char text[100] = "";
+	char cuvinte[100][100];
+	int d;
+	cout << "Introduceti textul : ";
+	cin.getline(text, 100);
+	spargere(text, cuvinte, d);
+
+	for (int i = 0; i < d; i++) {
+		if (onlyVocale(cuvinte[i])) {
+			dublareCuvantPozitie(cuvinte, d, i);
+			i++;
+		}
+	}
+
+	for (int i = 0; i < d; i++) {
+		cout << cuvinte[i] << " ";
+	}
+}
+
 // Problema 3
 
 void citire(int x[], int& n, int p[100][100], int& m) {

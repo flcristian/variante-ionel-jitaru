@@ -75,6 +75,27 @@ void rezolvareSub3Problema1() {
 	cout << s;
 }
 
+// Problema 2
+
+void rezolvareSub3Problema2() {
+	char cuvinte[100][100];
+	char nr[30] = "";
+	int d;
+	cout << "Introduceti numarul cuvintelor : ";
+	cin.getline(nr, 3);
+	d = atoi(nr);
+	for (int i = 0; i < d; i++) {
+		cout << "Introduceti cuvantul " << i << " : ";
+		cin.getline(cuvinte[i], 100);
+	}
+
+	for (int i = 0; i < d - 1; i++) {
+		if (strcmp(strstr(cuvinte[i], cuvinte[d - 1]), cuvinte[i]) == 0) {
+			cout << cuvinte[i] << " ";
+		}
+	}
+}
+
 // Problema 3
 
 void citireLast(int x[], int& n, int& k) {
