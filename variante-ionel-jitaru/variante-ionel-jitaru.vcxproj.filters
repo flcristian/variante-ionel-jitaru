@@ -27,100 +27,100 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2022-Varianta-1.h">
+    <ClInclude Include="2022-Varianta-1-MI.h">
       <Filter>Variante\2022</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-2.h">
+    <ClInclude Include="2021-Varianta-2-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-3.h">
+    <ClInclude Include="2021-Varianta-3-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-4.h">
+    <ClInclude Include="2021-Varianta-4-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-5.h">
+    <ClInclude Include="2021-Varianta-5-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-6.h">
+    <ClInclude Include="2021-Varianta-6-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-7.h">
+    <ClInclude Include="2021-Varianta-7-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-8.h">
+    <ClInclude Include="2021-Varianta-8-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-9.h">
+    <ClInclude Include="2021-Varianta-9-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-10.h">
+    <ClInclude Include="2021-Varianta-10-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-11.h">
+    <ClInclude Include="2021-Varianta-11-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2021-Varianta-12.h">
+    <ClInclude Include="2021-Varianta-12-MI.h">
       <Filter>Variante\2021</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-1.h">
+    <ClInclude Include="2020-Varianta-1-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-2.h">
+    <ClInclude Include="2020-Varianta-2-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-3.h">
+    <ClInclude Include="2020-Varianta-3-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-5.h">
+    <ClInclude Include="2020-Varianta-5-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-4.h">
+    <ClInclude Include="2020-Varianta-4-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-6.h">
+    <ClInclude Include="2020-Varianta-6-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-7.h">
+    <ClInclude Include="2020-Varianta-7-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-8.h">
+    <ClInclude Include="2020-Varianta-8-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-9.h">
+    <ClInclude Include="2020-Varianta-9-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-10.h">
+    <ClInclude Include="2020-Varianta-10-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-11.h">
+    <ClInclude Include="2020-Varianta-11-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-12.h">
+    <ClInclude Include="2020-Varianta-12-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-13.h">
+    <ClInclude Include="2020-Varianta-13-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-14.h">
+    <ClInclude Include="2020-Varianta-14-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-15.h">
+    <ClInclude Include="2020-Varianta-15-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-16.h">
+    <ClInclude Include="2020-Varianta-16-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-17.h">
+    <ClInclude Include="2020-Varianta-17-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-18.h">
+    <ClInclude Include="2020-Varianta-18-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-19.h">
+    <ClInclude Include="2020-Varianta-19-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
-    <ClInclude Include="2020-Varianta-20.h">
+    <ClInclude Include="2020-Varianta-20-MI.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
   </ItemGroup>
