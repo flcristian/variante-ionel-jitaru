@@ -83,8 +83,8 @@ void rezolvareSub3Problema1() {
 void citirePb2(char cuvinte[200][200], int& n, int& k) {
 	char text[10000] = "", nr[10] = "", kr[10] = "";
 	cout << "Introduceti numarul de cuvinte : ";
-	cin >> nr;
 	cin.getline(nr, 100);
+	n = atoi(nr);
 	cout << "Introduceti pozitia cuvantului dorit : ";
 	cin.getline(kr, 100);
 	k = atoi(kr);
@@ -94,11 +94,33 @@ void citirePb2(char cuvinte[200][200], int& n, int& k) {
 	}
 }
 
+bool esteSufix(char* cuvant, char* sufix) {
+	int i = 0;
+	int j = 0;
+
+	for (i = strlen(cuvant) - 1, j = strlen(sufix) - 1; cuvant[i] == sufix[j]; i--, j--);
+
+	if (j == -1) {
+		return 1;
+	}
+	return 0;
+}
+
 void rezolvareSub3Problema2() {
 	char cuvinte[200][200];
 	int n, k;
 	citirePb2(cuvinte, n, k);
-	// ? ? ?
+	k--;
+
+	char sufix[200] = "";
+	strcpy(sufix, cuvinte[k]);
+	for (int i = 0; i < n; i++) {
+		if (i != k) {
+			if (esteSufix(cuvinte[i], sufix)) {
+				cout << cuvinte[i] << " ";
+			}
+		}
+	}
 }
 
 // Problema 3

@@ -134,8 +134,5 @@
     <Text Include="bac2.txt">
       <Filter>Text Files</Filter>
     </Text>
-    <Text Include="intrebari.txt">
-      <Filter>Text Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

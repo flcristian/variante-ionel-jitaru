@@ -75,6 +75,14 @@ void spargere(char text[], char cuvinte[100][100], int& d) {
 	}
 }
 
+void virgulaToPunct(char* numar) {
+	for (int i = 0; i < strlen(numar); i++) {
+		if (numar[i] == ',') {
+			numar[i] = '.';
+		}
+	}
+}
+
 void rezolvareSub3Problema2() {
 	char text[100] = "";
 	char cuvinte[100][100];
@@ -84,7 +92,10 @@ void rezolvareSub3Problema2() {
 	spargere(text, cuvinte, d);
 
 	for (int i = 0; i < d; i++) {
-		int k = atoi(cuvinte[i]);
+		char r[200] = "";
+		strcpy(r, cuvinte[i]);
+		virgulaToPunct(r);
+		double k = atof(r);
 		if (k < 0) {
 			cout << " ";
 		}
@@ -93,8 +104,6 @@ void rezolvareSub3Problema2() {
 		}
 		cout << " ";
 	}
-
-	// ? ? ?
 }
 
 

@@ -104,6 +104,14 @@ void spargere(char text[], char cuvinte[100][100], int& d) {
 	}
 }
 
+void virgulaToPunct(char* numar) {
+	for (int i = 0; i < strlen(numar); i++) {
+		if (numar[i] == ',') {
+			numar[i] = '.';
+		}
+	}
+}
+
 void rezolvareSub3Problema2() {
 	char text[100] = "";
 	char cuvinte[100][100];
@@ -114,17 +122,18 @@ void rezolvareSub3Problema2() {
 
 	int count = 0;
 	for (int i = 0; i < d; i++) {
-		float k = atof(cuvinte[i]);
-		int ki = atoi(cuvinte[i]);
-		if (!(ki == 0 && cuvinte[i][0] != '0')) {
-			if (k == ki) {
+		char numar[100] = "";
+		strcpy(numar, cuvinte[i]);
+		int ki = atoi(numar);
+		if (!(ki == 0 && numar[0] != '0')) {
+			virgulaToPunct(numar);
+			double kd = atof(numar);
+			if (ki == kd) {
 				count++;
 			}
 		}
 	}
 	cout << count << endl;
-
-	// ? ? ?
 }
 
 // Problema 3
