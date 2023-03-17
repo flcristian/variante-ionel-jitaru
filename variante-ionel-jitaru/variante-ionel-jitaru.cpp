@@ -1,9 +1,5 @@
-#include "2020-Varianta-2-MI.h"
+#include "2020-Varianta-17-SN.h"
 
 int main() {
-	rezolvareSub3Problema2();
+	rezolvareSub3Problema1();
 }
-
-
-
-
