@@ -1,5 +1,5 @@
-#include "2020-Varianta-6-SN.h"
+#include "2020-Varianta-4-SN.h"
 
 int main() {
-	rezolvareSub3Problema3();
+	rezolvareSub3Problema1();
 }
