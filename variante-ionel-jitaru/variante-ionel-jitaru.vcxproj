@@ -131,8 +131,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2020-Varianta-1-MI.h" />
+    <ClInclude Include="2020-Varianta-1-SN.h" />
+    <ClInclude Include="2020-Varianta-10-SN.h" />
+    <ClInclude Include="2020-Varianta-11-SN.h" />
+    <ClInclude Include="2020-Varianta-12-SN.h" />
+    <ClInclude Include="2020-Varianta-13-SN.h" />
+    <ClInclude Include="2020-Varianta-14-SN.h" />
+    <ClInclude Include="2020-Varianta-15-SN.h" />
+    <ClInclude Include="2020-Varianta-16-SN.h" />
     <ClInclude Include="2020-Varianta-17-SN.h" />
     <ClInclude Include="2020-Varianta-18-SN.h" />
+    <ClInclude Include="2020-Varianta-2-SN.h" />
     <ClInclude Include="2020-Varianta-20-SN.h" />
     <ClInclude Include="2020-Varianta-10-MI.h" />
     <ClInclude Include="2020-Varianta-11-MI.h" />
@@ -147,13 +156,20 @@
     <ClInclude Include="2020-Varianta-2-MI.h" />
     <ClInclude Include="2020-Varianta-20-MI.h" />
     <ClInclude Include="2020-Varianta-3-MI.h" />
+    <ClInclude Include="2020-Varianta-3-SN.h" />
     <ClInclude Include="2020-Varianta-4-MI.h" />
+    <ClInclude Include="2020-Varianta-4-SN.h" />
+    <ClInclude Include="2020-Varianta-5-SN.h" />
     <ClInclude Include="2020-Varianta-6-MI.h" />
     <ClInclude Include="2020-Varianta-5-MI.h" />
+    <ClInclude Include="2020-Varianta-6-SN.h" />
     <ClInclude Include="2020-Varianta-7-MI.h" />
+    <ClInclude Include="2020-Varianta-7-SN.h" />
     <ClInclude Include="2020-Varianta-8-MI.h" />
+    <ClInclude Include="2020-Varianta-8-SN.h" />
     <ClInclude Include="2020-Varianta-9-MI.h" />
     <ClInclude Include="2020-Varianta-19-SN.h" />
+    <ClInclude Include="2020-Varianta-9-SN.h" />
     <ClInclude Include="2021-Varianta-12-MI.h" />
     <ClInclude Include="2021-Varianta-11-MI.h" />
     <ClInclude Include="2021-Varianta-10-MI.h" />

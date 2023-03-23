@@ -81,22 +81,72 @@ void citirePb2(int x[], int& n) {
 	}
 }
 
-int contineDoarImpare(int x) {
+bool contineDoarImpare(int x) {
 	while (x != 0) {
-		if()
+		int c = x % 10;
+		if (c % 2 == 0) {
+			return 0;
+		}
+		x /= 10;
 	}
+	return 1;
 }
 
-//todo
-void adaugarePozitie() {
-
+void adaugarePozitie(int x[], int& n, int k, int nr) {
+	for (int i = n; i > k; i--) {
+		x[i] = x[i - 1];
+	}
+	x[k] = nr;
+	n++;
 }
 
 void rezolvareSub3Problema2() {
 	int x[20], n;
 	citirePb2(x, n);
+	for (int i = 0; i < n; i++) {
+		if (contineDoarImpare(x[i])) {
+			adaugarePozitie(x, n, i + 1, x[i]);
+			i++;
+		}
+	}
 
-
+	for (int i = 0; i < n; i++) {
+		cout << x[i] << " ";
+	}
 }
 
 // Problema 3
+
+void citireLast(int x[], int y[], int& n, int& m) {
+	ifstream f("bac.txt");
+	f >> n;
+	for (int i = 0; i < n; i++) {
+		f >> x[i];
+	}
+	m = 0;
+	while (!f.eof()) {
+		f >> y[m];
+		m++;
+	}
+	f.close();
+}
+
+bool apartineVectorului(int x[], int n, int k) {
+	for (int i = 0; i < n; i++) {
+		if (x[i] == k) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+void rezolvareSub3Problema3() {
+	int x[1000], y[1000], n, m;
+	citireLast(x, y, n, m);
+
+	for (int i = 0; i < m; i++) {
+		if (!apartineVectorului(x, n, y[i])) {
+			cout << y[i] << " ";
+		}
+	}
+}

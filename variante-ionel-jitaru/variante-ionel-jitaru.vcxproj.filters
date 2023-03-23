@@ -135,6 +135,54 @@
     <ClInclude Include="2020-Varianta-17-SN.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2020-Varianta-16-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-15-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-14-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-13-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-12-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-11-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-10-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-9-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-8-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-7-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-6-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-5-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-4-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-3-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-2-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
+    <ClInclude Include="2020-Varianta-1-SN.h">
+      <Filter>Variante\2020</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
