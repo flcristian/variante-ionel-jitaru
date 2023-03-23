@@ -83,7 +83,6 @@ int cbk(int b, int n) {
 		int c = n % 10;
 		s += c * pow(b, i);
 		i--;
-		cout << i << " " << c << endl;
 		n /= 10;
 	}
 	return s;
