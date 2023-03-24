@@ -183,6 +183,42 @@
     <ClInclude Include="2020-Varianta-1-SN.h">
       <Filter>Variante\2020</Filter>
     </ClInclude>
+    <ClInclude Include="2021-Varianta-1-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-2-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-3-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-4-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-5-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-6-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-7-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-8-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-9-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-10-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-11-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
+    <ClInclude Include="2021-Varianta-12-SN.h">
+      <Filter>Variante\2021</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
