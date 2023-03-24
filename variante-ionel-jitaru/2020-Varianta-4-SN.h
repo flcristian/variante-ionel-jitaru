@@ -38,18 +38,55 @@ void rezolvareSub3Problema2() {
 	int x[20], n;
 	citirePb2(x, n);
 
-	// NU E GATA!
-	// NU E GATA!
-	// NU E GATA!
-	// NU E GATA!
-	// NU E GATA!
+	int c = 0;
+	for (int i = 0, j = n - 1; i < n / 2; i++, j--) {
+		if (x[i] != x[j]) {
+			c++;
+		}
+	}
+	cout << c;
 }
 
 // Problema 3
 
-void rezolvareSub3Problema3() {
-
+void citireLast(int x[], int& n) {
+	ifstream f("bac.txt");
+	n = 0;
+	while (!f.eof()) {
+		f >> x[n];
+		n++;
+	}
+	f.close();
 }
-// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!
-// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!
-// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!// NU E GATA!
+
+void removePos(int x[], int& n, int k) {
+	for (int i = k; i < n - 1; i++) {
+		x[i] = x[i + 1];
+	}
+	n--;
+}
+
+void rezolvareSub3Problema3() {
+	int x[10000], n;
+	citireLast(x, n);
+
+	int r = 0, c = 0;
+	for (int i = 1; i < n; i++) {
+		if (x[i] == x[r]) {
+			removePos(x, n, i);
+			i--, c++;
+		}
+		else {
+			if (c > 0) {
+				removePos(x, n, r);
+				i--, c = 0;
+			}
+			r = i;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		cout << x[i] << " ";
+	}
+	cout << endl;
+}
